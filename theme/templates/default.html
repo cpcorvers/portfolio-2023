@@ -1,0 +1,37 @@
+<!-- default.html -->
+<!doctype html>
+<html class="window-container" lang="{{ lang }}">
+
+{% include 'head.html' %}
+
+<body class="container">
+	<div class="cells cellA">
+		<a href="{{ site.url }}/{{ site.home }}" class="brand"> {{ site.title }}
+			<br>
+			<p class="footer">Transforming perspectives as craftsmen</p>
+		</a>
+		<div class="drop-menu">
+			<input name="toggle" type="checkbox" />
+			<div class="drop-menu-content">
+				{% for item in navigation %}
+				<a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}.html" class="drop-menu-item">{{ item.name }}</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="line-menu">
+			{% for item in navigation %}
+			<a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}.html" class="menu">{{ item.name }}</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="cells cellB ">
+		{% block content %}
+
+		{% endblock content %}
+	</div>
+	<footer class="cells cellC">
+		{% include 'footer.html' %}
+	</footer>
+</body>
+
+</html>

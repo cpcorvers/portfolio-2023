@@ -1,0 +1,13 @@
+#navigation:
+- name: Vision
+  link: /vision
+- name: Work
+  link: /work
+- name: Techniques
+  link: /techniques
+- name: Workshops
+  link: /workshops
+- name: Tools
+  link: /tools
+- name: About
+  link: /about

@@ -1,0 +1,18 @@
+<!-- template work.html -->
+{% extends 'default.html' %}
+{% block content %}
+
+<h1>Workportfolio</h1>
+<div class="cellB-portfolio">
+  {% for post in worklist %}
+  <div class="portfolio-cell">
+    <a href="{{ site.url }}{{ site.baseurl }}/{{ post.pagetitle }}.html" class="portfolio">
+      <div class="portfolio-cell-link">
+        <img class="img-portfolio-thumb" src="{{ site.pathtoimages }}{{ post.thumbnail }}" alt="">
+        {{ post.title }}
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
