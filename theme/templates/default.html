@@ -6,7 +6,7 @@
 
 <body class="container">
 	<div class="cells cellA">
-		<a href="{{ site.url }}/{{ site.home }}" class="brand"> {{ site.title }}
+		<a href="../{{ site.url }}/{{ site.home }}" class="brand"> {{ site.title }}
 			<br>
 			<p class="footer">Transforming perspectives as craftsmen</p>
 		</a>
@@ -14,13 +14,15 @@
 			<input name="toggle" type="checkbox" />
 			<div class="drop-menu-content">
 				{% for item in navigation %}
-				<a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}.html" class="drop-menu-item">{{ item.name }}</a>
+				<a href="../{{ site.url }}{{ item.link }}/index.html" class="drop-menu-item">{{ item.name }}</a>
+				<!-- <a href="{{ site.url }}{{ item.link }}/index.html" class="drop-menu-item">{{ item.name }}</a> -->
 				{% endfor %}
 			</div>
 		</div>
 		<div class="line-menu">
 			{% for item in navigation %}
-			<a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}.html" class="menu">{{ item.name }}</a>
+			<a href="../{{ site.url }}{{ item.link }}/index.html" class="menu">{{ item.name }}</a>
+			<!-- <a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}.html" class="menu">{{ item.name }}</a> -->
 			{% endfor %}
 		</div>
 	</div>
