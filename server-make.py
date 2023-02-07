@@ -61,6 +61,9 @@ for image in imagery:
 src_dir = './theme/css/'
 dst_dir = Path(f'./{outputfile}/')
 # create the destination directory if it doesn't exist
+Path(dst_dir).mkdir(exist_ok=True, parents=True)
+# get list of all files in source directory with the glob.py library
+# by setting the root_dir to source directory glob only returns filenames
 stylesheet = glob.glob('*.css', root_dir=src_dir)
 # copy all files in the source directory to the destination using shutil.py
 for css in stylesheet:
