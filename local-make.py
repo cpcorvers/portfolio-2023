@@ -70,7 +70,6 @@ stylesheet = glob.glob('*.css', root_dir=src_dir)
 for css in stylesheet:
     src_file = Path(f"{src_dir}{css}")
     dst_file = Path(f"{dst_dir}/{css}")
-    print(dst_file)
     shutil.copy2(src_file, dst_file)
 
 # render pages fr m templates
