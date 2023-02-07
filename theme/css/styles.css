@@ -4,7 +4,7 @@
 
 .cells { text-align: center; line-height: 1.5; width: 100%; }
 
-.cellA { align-items: center; background-position: center top; background-repeat: no-repeat; background-image: url("../../content/images/bg-top.png"); background-size: cover; padding: 10px; justify-content: space-between; min-height: 55px; max-width: 98%; flex-direction: row; display: flex; position: sticky; top: 0; }
+.cellA { align-items: center; background-position: center top; background-repeat: no-repeat; background-image: url("images/bg-top.png"); background-size: cover; padding: 10px; justify-content: space-between; min-height: 55px; max-width: 98%; flex-direction: row; display: flex; position: sticky; top: 0; }
 
 .cellB { width: 100%; background-color: #ffffff; display: flex; flex-direction: column; }
 
@@ -34,13 +34,13 @@
 
 .about-cell-labels { flex-flow: row wrap; justify-content: center; width: 50vw; }
 
-@media only screen and (min-width: 781px) { .window-container { margin: 0 auto; } .container { margin: 0 auto; background: none; } .cellA { max-width: 100vw; } .cellB { background-color: #ffffff; max-width: 1024px; margin: 25px auto 25px auto; top: 55px; } .cellB-workshop { flex-flow: column wrap; align-items: center; } .cellC, .cellC-home { background-position: center bottom; background-repeat: no-repeat; background-image: url("../../content/images/bg-top.png"); background-size: cover; } .cellC-home { background: none; padding: 1px; } .portfolio-cell { max-width: 30%; min-height: 200px; } .portfolio-cell:hover { box-shadow: 0 0 20px #ff6000; } .portfolio-cell-link:hover { background-color: inherit; } .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: 30%; } .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: none; min-height: 100px; width: 92%; } .workshop-cell-img { width: 30%; } }
+@media only screen and (min-width: 781px) { .window-container { margin: 0 auto; } .container { margin: 0 auto; background: none; } .cellA { max-width: 100vw; } .cellB { background-color: #ffffff; max-width: 1024px; margin: 25px auto 25px auto; top: 55px; } .cellB-workshop { flex-flow: column wrap; align-items: center; } .cellC, .cellC-home { background-position: center bottom; background-repeat: no-repeat; background-image: url("images/bg-top.png"); background-size: cover; } .cellC-home { background: none; padding: 1px; } .portfolio-cell { max-width: 30%; min-height: 200px; } .portfolio-cell:hover { box-shadow: 0 0 20px #ff6000; } .portfolio-cell-link:hover { background-color: inherit; } .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: 30%; } .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: none; min-height: 100px; width: 92%; } .workshop-cell-img { width: 30%; } }
 
 @media only screen and (min-width: 1281px) { .window-container { background-color: #ffffff; } .container { justify-content: flex-start; } .cellA { width: 100vw; } .cellB { background: none; width: 60vw; } .cellB-portfolio, .cellB-workshop { align-content: space-around; min-height: 70vh; } .cellC, .cellC-home { top: 98vh; } .cellC-home { background: none; padding: 1px; } .portfolio-cell { max-width: 40%; min-height: 180px; } .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: 30%; min-height: 250px; } .workshop-cell, .workshop-cell-img, .workshop-cell-text { max-width: none; min-height: 100px; width: 80%; } .workshop-cell-img { width: 30%; } }
 
 .window-container-home { margin: 0; width: 100vw; height: 100vh; overflow: hidden; }
 
-.container-home { display: flex; justify-content: space-around; align-items: center; flex-direction: column; width: 100%; height: 98%; max-height: 800px; margin: 0; background-position: center center; background-repeat: no-repeat; background-image: url("../../content/images/bg.png"); background-size: cover; }
+.container-home { display: flex; justify-content: space-around; align-items: center; flex-direction: column; width: 100%; height: 98%; max-height: 800px; margin: 0; background-position: center center; background-repeat: no-repeat; background-image: url("images/bg.png"); background-size: cover; }
 
 h1, a.brand, h2, h3 { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; text-align: center; color: #303030; }
 
@@ -120,7 +120,7 @@ p.clientslist-small { text-align: center; font-size: 0.7rem; margin: 10px 0 0 0;
 
 @media only screen and (min-width: 1281px) { .img-centered, img { width: 60%; height: auto; margin: 10px auto 10px auto; } .img-about-thumb { height: 200px; width: 200px; } .img-portfolio-thumb { width: 100%; } }
 
-.drop-menu { display: flex; flex-direction: column; align-items: flex-end; position: fixed; top: 20px; right: 10px; height: 35px; width: 50px; background-color: #ff6000; background-repeat: no-repeat; background-image: url("../../content/images/menu.png"); background-position: center; background-size: 35px 35px; border-radius: 5px; }
+.drop-menu { display: flex; flex-direction: column; align-items: flex-end; position: fixed; top: 20px; right: 10px; height: 35px; width: 50px; background-color: #ff6000; background-repeat: no-repeat; background-image: url("images/menu.png"); background-position: center; background-size: 35px 35px; border-radius: 5px; }
 
 .drop-menu input { display: block; height: 100%; width: 100%; position: absolute; padding: 0; cursor: pointer; opacity: 0; z-index: 10; -webkit-touch-callout: none; }
 
