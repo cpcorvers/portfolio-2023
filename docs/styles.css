@@ -372,6 +372,12 @@ p.clientslist {
   font-size: 0.85rem;
   max-width: 500px;
 }
+p.clientslist-normal {
+  text-align: center;
+  margin: none;
+  font-size: 1rem;
+  max-width: 500px;
+}
 p.clientslist-small {
   text-align: center;
   font-size: 0.8rem;
