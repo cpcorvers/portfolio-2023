@@ -2,3 +2,5 @@ local-make.py
 theme/
 output/
 content/
+make.py
+build-local.sh

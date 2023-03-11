@@ -89,7 +89,7 @@
   width: 50vw;
 }
 
-.testimonial-cell, .workshop-cell, .workshop-cell-text, .workshop-cell-img {
+.testimonial-cell, .tool-cell, .technique-cell, .technique-cell-img, .technique-cell-text, .workshop-cell, .workshop-cell-text, .workshop-cell-img {
   width: 100%;
   background-color: #ffffff;
   margin: 5px;
@@ -136,6 +136,36 @@
   width: 50vw;
 }
 
+.technique-cell, .technique-cell-img, .technique-cell-text {
+  min-height: none;
+  flex-flow: row;
+  margin: 15px;
+  width: 92%;
+}
+
+.technique-cell-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  align-items: left;
+  flex-flow: column;
+  box-shadow: none;
+}
+
+.technique-cell-img {
+  width: 30%;
+  box-shadow: none;
+  flex-flow: column;
+}
+
+.tool-cell {
+  width: 92%;
+  min-height: none;
+  flex-flow: column;
+  margin: 15px;
+}
+
 @media only screen and (min-width: 781px) {
   .window-container {
     margin: 0 auto;
@@ -177,7 +207,7 @@
   .portfolio-cell-link:hover {
     background-color: inherit;
   }
-  .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text {
+  .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text, .technique-cell, .technique-cell-text, .technique-cell-img, .tool-cell {
     max-width: 30%;
   }
   .workshop-cell, .workshop-cell-img, .workshop-cell-text {
@@ -187,6 +217,19 @@
   }
   .workshop-cell-img {
     width: 30%;
+  }
+  .technique-cell, .technique-cell-text, .technique-cell-img {
+    max-width: none;
+    min-height: 100px;
+    width: 92%;
+  }
+  .technique-cell-img {
+    width: 30%;
+  }
+  .tool-cell {
+    max-width: 100%;
+    max-width: none;
+    min-height: 100px;
   }
 }
 @media only screen and (min-width: 1281px) {
@@ -218,7 +261,7 @@
     max-width: 40%;
     min-height: 180px;
   }
-  .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text {
+  .testimonial-cell, .workshop-cell, .workshop-cell-img, .workshop-cell-text, .technique-cell, .technique-cell-text, .technique-cell-img, .tool-cell {
     max-width: 30%;
     min-height: 250px;
   }
@@ -229,6 +272,17 @@
   }
   .workshop-cell-img {
     width: 30%;
+  }
+  .technique-cell, .technique-cell-text, .technique-cell-img {
+    max-width: none;
+    min-height: 100px;
+    width: 80%;
+  }
+  .technique-cell-img {
+    width: 30%;
+  }
+  .tool-cell {
+    max-width: 92%;
   }
 }
 .window-container-home {
@@ -383,6 +437,12 @@ p.clientslist-small {
   font-size: 0.8rem;
   margin: 10px 0 0 0;
   color: #777777;
+}
+p.technique-normal {
+  text-align: left;
+  margin: none;
+  font-size: 1rem;
+  max-width: 800px;
 }
 
 .footer {
